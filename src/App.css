@@ -1,38 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chat-message {
+  width: 60%;
+  background-color: #f2f2f2;
+  padding: 1em 1em 0px 1em;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 25px;
+  color: gray;
+  position: relative;
+  right: -20%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#input-button {
+  position: sticky;
+  bottom: 0;
+  background-color: #f2f2f2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+#copyright {
+  height: 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+.message-right {
+  background: #91fbff;
+  border-radius: 25px;
+  padding: 0.5em 1em !important;
+  margin: 1em;
+}
+.message-left {
+  background: aliceblue;
+  border-radius: 25px;
+  padding: 0.5em 1em !important;
+  margin: 1em;
+}
+.message-text {
+  font-size: 17px;
+}
+.message-icon {
+  font-size: 25px;
+  margin-right: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 992px) {
+  .chat-message {
+    width: 70%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -14%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 710px) {
+  .chat-message {
+    width: 70%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -14%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chat-message {
+    width: 90%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -5%;
+  }
+}
+@media screen and (max-width: 610px) {
+  .chat-message {
+    width: 80%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -10%;
+  }
+  .message-text {
+    font-size: 15px;
+  }
+  .message-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .chat-message {
+    width: 85%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -7%;
+  }
+  .message-text {
+    font-size: 14px;
+  }
+  .message-icon {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 496px) {
+  .chat-message {
+    width: 90%;
+    background-color: #f2f2f2;
+    padding: 1em 1em 0px 1em;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: -5%;
+  }
+  .chat-logo {
+    width: 150px;
+    height: 150px;
+  }
+  .message-right {
+    background: #91fbff;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 8px;
+  }
+  .message-left {
+    background: aliceblue;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 8px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .chat-message {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 8px 8px 0px 8px;
+    max-height: 430px;
+    overflow-y: auto;
+    border-radius: 25px;
+    color: gray;
+    position: relative;
+    right: 0px;
+  }
+  .chat-logo {
+    width: 150px;
+    height: 150px;
+  }
+  .message-right {
+    background: #91fbff;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 5px;
+  }
+  .message-left {
+    background: aliceblue;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 2px;
+  }
+  .message-text {
+    font-size: 14px;
+  }
+  .message-icon {
+    font-size: 16px;
+    margin-right: 2px;
   }
 }
